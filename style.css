@@ -77,22 +77,22 @@
         }
 
         /* HERO SECTION */
-      .hero {
-    position: relative;
-    min-height: 80vh;
-    background-image: url('./images/heroback.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 60px;
-    overflow: hidden;
-    border-radius: 40px;
+        .hero {
+            position: relative;
+            min-height: 80vh;
+            background-image: url('./images/heroback.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 60px;
+            overflow: hidden;
+            border-radius: 40px;
 
-    /* ANIMATSIYA UCHUN */
-   
-}
- 
+            /* ANIMATSIYA UCHUN */
+
+        }
+
 
 
 
@@ -118,7 +118,7 @@
             /* font og'irligi */
             font-style: normal;
             /* font-style: normal yoki italic, siz ☞ yozgansiz, shuni normal deb olamiz */
-            font-size: 18px;
+            font-size: 21px;
             /* font o'lchami */
             line-height: 140%;
             /* line-height */
@@ -222,7 +222,7 @@
             }
 
             .hero-box p {
-                font-size: 14px;
+                font-size: 26px;
                 margin-bottom: 20px;
             }
 
@@ -265,7 +265,7 @@
             }
 
             .hero-box p {
-                font-size: 14px;
+                font-size: 20px;
                 line-height: 1.3;
             }
 
@@ -298,7 +298,7 @@
             }
 
             .hero-box p {
-                font-size: 14px !important;
+                font-size: 18px;
             }
         }
 
@@ -395,7 +395,7 @@
 
 
         .box-info {
-            
+
             width: 100%;
             border: 2px solid black;
             border-radius: 10px;
@@ -411,7 +411,7 @@
 
 
 
-        .boxes-box{
+        .boxes-box {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -424,8 +424,8 @@
 
 
 
-        .btn{
-              display: flex;
+        .btn {
+            display: flex;
             /* Flex yordamida ichidagi elementlarni yonma-yon qiladi */
             align-items: center;
             /* Vertikal markazlashtirish */
@@ -467,7 +467,7 @@
             height: 20px;
             display: inline-block;
             vertical-align: middle;
-            
+
         }
 
 
@@ -478,127 +478,167 @@
 
 
 
- 
-/* MODAL ASOSIY STYLE */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-}
 
-.modal-content {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px 40px;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-  position: relative;
-  animation: fadeIn 0.4s ease;
-}
+        /* MODAL ASOSIY STYLE */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
 
-@keyframes fadeIn {
-  from {opacity: 0; transform: scale(0.9);}
-  to {opacity: 1; transform: scale(1);}
-}
+        .modal-content {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 40px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 0.4s ease;
+        }
 
-.modal-content h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
 
-.modal-content input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-.submit-btn {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(90deg, #fda085, #f6d365);
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+        .modal-content h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-.submit-btn:hover {
-  transform: scale(1.05);
-}
+        .modal-content input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 25px;
-  color: #444;
-  cursor: pointer;
-}
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #fda085, #f6d365);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-.success {
-  background: #fff;
-  color: #000;
-}
+        .submit-btn:hover {
+            transform: scale(1.05);
+        }
 
-.tg-btn {
-  display: inline-block;
-  margin-top: 15px;
-  background: #0088cc;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 25px;
+            color: #444;
+            cursor: pointer;
+        }
 
-.tg-btn:hover {
-  background: #006fa1;
-}
+        .success {
+            background: #fff;
+            color: #000;
+        }
 
+        .tg-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #0088cc;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-
-
-
-
-
-.modal-titlte{
-    font-size: 20px;
-}
+        .tg-btn:hover {
+            background: #006fa1;
+        }
 
 
 
 
-.hero-text{
-    font-size: 24px !important;
-    line-height: 1px;
-}
+
+
+
+        .modal-titlte {
+            font-size: 20px;
+        }
 
 
 
 
-.hero-box p {
-    font-family: 'Gilroy-Black', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px !important;
-    line-height: 1.4;
-    letter-spacing: 0.04em;
-    text-align: center;
-    text-transform: capitalize;
-    color: white;
-    margin-bottom: 24px;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-}
+        .hero-text {
+            font-size: 18px !important;
+            line-height: 1px;
+            text-transform: uppercase;
+        }
+
+
+
+        .big-title {
+            color: #fff;
+            align-items: center;
+            margin-top: -100px;
+        }
+
+
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero-box p {
+                font-size: 26px;
+            }
+
+            .big-title {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-box p {
+                font-size: 20px;
+            }
+
+            .big-title {
+                font-size: 18px;
+                left: 40px;
+                top: 20px;
+                position: absolute;
+                text-align: center;
+                width: 300px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero-box p {
+                font-size: 18px;
+            }
+
+            .big-title {
+                font-size: 20px;
+                top: 10px;
+            }
+        }
