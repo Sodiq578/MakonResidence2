@@ -1,4 +1,6 @@
-        /* RESET & BASIC */
+
+
+/* RESET & BASIC */
         * {
             margin: 0;
             padding: 0;
@@ -9,7 +11,7 @@
             font-family: 'Gilroy-ExtraBold', 'Arial', sans-serif;
 
             padding-bottom: 30px;
-
+            
         }
 
         .container {
