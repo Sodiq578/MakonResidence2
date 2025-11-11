@@ -10,20 +10,14 @@ const makonForm = document.getElementById('makonForm');
 const successModal = document.getElementById('successModal');
 
 // Modalni ochish
-openModal.addEventListener('click', () => {
-  formModal.style.display = 'flex';
-});
+openModal.addEventListener('click', () => formModal.style.display = 'flex');
 
-if(openModal2) {
-  openModal2.addEventListener('click', () => {
-    formModal.style.display = 'flex';
-  });
+if (openModal2) {
+  openModal2.addEventListener('click', () => formModal.style.display = 'flex');
 }
 
-// Modalni yopish
-closeModal.addEventListener('click', () => {
-  formModal.style.display = 'none';
-});
+// Modalni yopish faqat × bosilganda
+closeModal.addEventListener('click', () => formModal.style.display = 'none');
 
 // Formani yuborish
 makonForm.addEventListener('submit', async (e) => {
@@ -37,10 +31,7 @@ makonForm.addEventListener('submit', async (e) => {
     return;
   }
 
-  const message = `📝 Yangi so‘rov:
-👤 Ism: ${name}
-📞 Telefon: ${phone}
-🌐 Sayt: 2 oq sayt`;
+  const message = `📝 Yangi so‘rov:\n👤 Ism: ${name}\n📞 Telefon: ${phone}\n🌐 Sayt: 2 oq sayt`;
 
   try {
     await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -62,23 +53,11 @@ makonForm.addEventListener('submit', async (e) => {
   }
 });
 
-// Modal tashqarisiga bosganda yopish
-window.addEventListener('click', (e) => {
-  if (e.target === formModal) formModal.style.display = 'none';
-  if (e.target === successModal) successModal.style.display = 'none';
-});
-
-
-
-
-
-
-
-
-
-
-
-
+// Tashqariga bosilganda modal yopilmasin ❌
+// window.addEventListener('click', (e) => {
+//   if (e.target === formModal) formModal.style.display = 'none';
+//   if (e.target === successModal) successModal.style.display = 'none';
+// });
 
 
 
